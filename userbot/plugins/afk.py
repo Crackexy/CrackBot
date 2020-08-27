@@ -31,7 +31,7 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` " + \
                 "for the proper functioning of afk functionality " + \
-                "in @FridayOT\n\n `{}`".format(str(e)),
+                "in @CrackBotUB\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True
             )
@@ -121,8 +121,8 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**My Master is Offline** ! \n\n**Reason** : `{reason}` \n\n**Afk Since** : {afk_since}" + \
-            f"\n\n__Kindly Leave A Message__ ! \n`He Will Reply To You Soon !`" \
+        message_to_reply = f"**My Master is Offline** ! \n\n**Reason** : {reason} \n\n**Afk Since** : {afk_since}" + \
+            f"\n\n__Kindly Leave A Message__ ! \nHe Will Reply To You Soon !" \
             if reason \
             else f"**Hello, My Master Is Offline Right Now And MayBe He Forgot To List Reason ! Any Way He Will Come Back Soon !**"
         msg = await event.reply(message_to_reply)
