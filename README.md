@@ -1,7 +1,7 @@
 # CrackBot
 
 ## Use Repo At Your Own Risk...
-![Enterprise](https://telegra.ph/file/28e4e9052882fd2b64027.jpg)
+![Enterprise](https://telegra.ph/file/3feaa0629756e0e45a2b7.jpg)
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
