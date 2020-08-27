@@ -8,7 +8,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "CrackBot"
 PM_IMG = "https://telegra.ph/file/3feaa0629756e0e45a2b7.jpg"
 pm_caption = "**ᴄʀᴀᴄᴋʙᴏᴛ ᴏғғɪᴄɪᴀʟ**\n\n"
-pm_caption += "**🙃 Yes Master, Am Alive And Working Fine 😎**\n\n"
+pm_caption += "**Yes Master, Am Alive And Systems Are Working Perfectly 😎**\n\n"
 pm_caption += "✘ About My System ✘\n\n"
 pm_caption += "➾Telethon Version : **6.0.9**\n➾Python : 3.7.4\n"
 pm_caption += "➾DataBase : **Functioning**\n"
