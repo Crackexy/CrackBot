@@ -1,4 +1,4 @@
-"""QuotLy: Avaible commands: .qbot
+"""QuotLy: Avaible commands: .q
 """
 import datetime
 from telethon import events
@@ -8,7 +8,7 @@ from userbot import bot, CMD_HELP
 from userbot.utils import admin_cmd
 
 #@register(outgoing=True, pattern="^.q(?: |$)(.*)")
-@borg.on(admin_cmd(pattern=r"qbot(?: |$)(.*)"))
+@borg.on(admin_cmd(pattern=r"q(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return 
@@ -24,7 +24,7 @@ async def _(event):
     if reply_message.sender.bot:
        await event.edit("```Reply to actual users message.```")
        return
-    await event.edit("```Making a Quote```")
+    await event.edit("Making Its Quote...")
     async with bot.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1031952739))
