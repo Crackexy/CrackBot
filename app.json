@@ -26,7 +26,7 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @Mariodevs.",
+      "description": "Fill your Full name you want to see in .alive command.",
       "value": ""
     },
     "APP_ID": {
