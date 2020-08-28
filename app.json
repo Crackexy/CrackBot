@@ -25,11 +25,6 @@
       "value": "./userbot/DOWNLOADS/",
       "required": false
     },
-    "CUSTOM_PMPERMIT": {
-      "description": "Enter Custom Middle Pm Permit To Show When Some One PM You.",
-      "value": "",
-      "required": false
-    },
     "ALIVE_NAME": {
       "description": "Fill your Full name or Username like @Mariodevs.",
       "value": ""
