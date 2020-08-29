@@ -130,7 +130,7 @@ async def promote(promt):
                                  delete_messages=True,
                                  pin_messages=True)
 
-    await promt.edit("`Promoting...`")
+    await promt.edit("`Promoting This Retard...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "MemeMaster"  # Just in case.
@@ -143,7 +143,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Promoted Successfully! Now gib Party 🥳`")
+        await promt.edit("`Retard Have Been Promote Enjoy!`")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -174,7 +174,7 @@ async def demote(dmod):
         return
 
     # If passing, declare that we're going to demote
-    await dmod.edit("`Demoting...`")
+    await dmod.edit("`Demoting This Retard...`")
     rank = "admeme"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -200,7 +200,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit("`Demoted this retard Successfully!`")
+    await dmod.edit("`Demoted This Retard Successfully!`")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -232,7 +232,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Whacking the pest!`")
+    await bon.edit("`Retard Being Banned...!`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id,
@@ -253,7 +253,7 @@ async def ban(bon):
     # is done gracefully
     # Shout out the ID, so that fedadmins can fban later
     if reason:
-        await bon.edit(f"Loser `{str(user.id)}` was banned !!\nReason: {reason}")
+        await bon.edit(f"Retard `{str(user.id)}` Was Banned !!\nFor Reason: {reason}")
     else:
         await bon.edit(f"Bitch `{str(user.id)}` was banned !!")
     # Announce to the logging group if we have banned the person
@@ -281,7 +281,7 @@ async def nothanos(unbon):
         return
 
     # If everything goes well...
-    await unbon.edit("`Unbanning...`")
+    await unbon.edit("`Unbanning This Retard...`")
 
     user = await get_user_from_event(unbon)
     user = user[0]
@@ -293,7 +293,7 @@ async def nothanos(unbon):
     try:
         await unbon.client(
             EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Unbanned Successfully. Granting another chance.```")
+        await unbon.edit("```Retard Unbanned Successfully. Be Thanks For Mercy.```")
 
         if BOTLOG:
             await unbon.client.send_message(
@@ -338,13 +338,13 @@ async def spider(spdr):
 
     if user.id == self_user.id:
         await spdr.edit(
-            "`Hands too short, can't duct tape myself...\n(ヘ･_･)ヘ┳━┳`")
+            "`Hands Too Short, Can't Duct Tape Myself...\n(ヘ･_･)ヘ┳━┳`")
         return
 
     # If everything goes well, do announcing and mute
     await spdr.edit("`Gets a tape!`")
     if mute(spdr.chat_id, user.id) is False:
-        return await spdr.edit('`Error! User probably already muted.`')
+        return await spdr.edit('`Error! Retard Probably Already Muted.`')
     else:
         try:
             await spdr.client(
@@ -352,9 +352,9 @@ async def spider(spdr):
 
             # Announce that the function is done
             if reason:
-                await spdr.edit(f"`Safely taped !!`\nReason: {reason}")
+                await spdr.edit(f"`Retard Safely Taped !!`\n For Reason: {reason}")
             else:
-                await spdr.edit("`Safely taped !!`")
+                await spdr.edit("`Retard Safely Taped !!`")
 
             # Announce to logging group
             if BOTLOG:
@@ -389,7 +389,7 @@ async def unmoot(unmot):
         return
 
     # If admin or creator, inform the user and start unmuting
-    await unmot.edit('```Unmuting...```')
+    await unmot.edit('```Unmuting Retard...```')
     user = await get_user_from_event(unmot)
     user = user[0]
     if user:
@@ -404,9 +404,9 @@ async def unmoot(unmot):
         try:
             await unmot.client(
                 EditBannedRequest(unmot.chat_id, user.id, UNBAN_RIGHTS))
-            await unmot.edit("```Unmuted Successfully```")
+            await unmot.edit("```Retard Unmuted Successfully```")
         except UserIdInvalidError:
-            await unmot.edit("`Uh oh my unmute logic broke!`")
+            await unmot.edit("`Uh Oh My Unmute Logic Broke!`")
             return
 
         if BOTLOG:
@@ -478,13 +478,13 @@ async def ungmoot(un_gmute):
         return
 
     # If pass, inform and start ungmuting
-    await un_gmute.edit('```Ungmuting...```')
+    await un_gmute.edit('```Retard Ungmuting...```')
 
     if ungmute(user.id) is False:
         await un_gmute.edit("`Error! User probably not gmuted.`")
     else:
         # Inform about success
-        await un_gmute.edit("```Ungmuted Successfully```")
+        await un_gmute.edit("```Retard Ungmuted Successfully```")
 
         if BOTLOG:
             await un_gmute.client.send_message(
@@ -528,9 +528,9 @@ async def gspider(gspdr):
             '`Error! User probably already gmuted.\nRe-rolls the tape.`')
     else:
         if reason:
-            await gspdr.edit(f"`Globally taped!`Reason: {reason}")
+            await gspdr.edit(f"`Globally Taped!`For Reason: {reason}")
         else:
-            await gspdr.edit("`Globally taped!`")
+            await gspdr.edit("`Globally Taped!`")
 
         if BOTLOG:
             await gspdr.client.send_message(
