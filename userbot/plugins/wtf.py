@@ -20,9 +20,9 @@ async def _(event):
     animation_chars = [
             "What",
             "What The",
-            "What The F",
-            "What The F Brah",
-            "[What The F Brah](https://telegra.ph//file/f3b760e4a99340d331f9b.jpg)"
+            "What The Fcuk",
+            "What The Fuck Bruh",
+            "[What The F Bruh](https://telegra.ph//file/f3b760e4a99340d331f9b.jpg)"
         ]
 
     for i in animation_ttl:
