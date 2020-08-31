@@ -126,7 +126,7 @@ async def gspider(rk):
             return await rkp.edit(f"**Error! User Probably Already Gbanned.**")
    except:
     	pass
-   return await rkp.edit(f"**USER GBANNED**\n**Person's Name** : {user.first_name}\n**Victim's Id** :{user.id}\n**Victim's Username** : @{me.username}\n**Affected Chats** : {a} \n**User Was Blocked and added to **CrackBot** Gban List**") 
+   return await rkp.edit(f"**USER GBANNED**\n**Person's Name** : {user.first_name}\n**Victim's Id** :{user.id}\n**Victim's Username** : @{me.username}\n**Affected Chats** : {a} \n**User Was Blocked and added to CrackBot Gban List**") 
       
 @borg.on(admin_cmd(pattern="ungban(?: |$)(.*)"))
 async def gspider(rk):
