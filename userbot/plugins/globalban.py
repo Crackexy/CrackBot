@@ -189,4 +189,3 @@ CMD_HELP.update({
 \n**Usage**: unban user from all groups, channels , remove user from gban watch.\
 "
 })
-© 2020 GitHub, Inc.
