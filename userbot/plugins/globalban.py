@@ -85,7 +85,7 @@ async def gspider(rk):
         rkp = await lazy.reply("**GBANNING THE USER...**")
    else:
     	rkp = await lazy.edit("**PROCESSING...**")      
-   me = await rk.client.get_me() ; await rkp.edit(f"**Requesting The Gban!**") ; my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id) ; my_username = f"@{me.username}" if me.username else my_mention ; chat = await rk.get_chat() ; a = b = 0
+   me = await rk.client.get_me() ; await rkp.edit(f"**GBANNING THE USER!!!**") ; my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id) ; my_username = f"@{me.username}" if me.username else my_mention ; chat = await rk.get_chat() ; a = b = 0
    if rk.is_private:       
    	user = rk.chat ; reason = rk.pattern_match.group(1) ; chat_title = 'PM'  
    else:
@@ -116,7 +116,7 @@ async def gspider(rk):
             try:
                  await rk.client.edit_permissions(i, user, view_messages=False)          
                  a += 1
-                 await rkp.edit(f"**Requesting To Gban User!!!\nUser Gbanned in {a} chats.....**")
+                 await rkp.edit(f"**USER IS BEING BANNED!!!\nUser Gbanned in {a} chats...**")
             except:
                  b += 1                     
    else:
@@ -126,9 +126,8 @@ async def gspider(rk):
             return await rkp.edit(f"**Error! User Probably Already Gbanned.**")
    except:
     	pass
-   return await rkp.edit(f"**USER GBANNED**\n[{user.first_name}](tg://user?id={user.id})\n**AFFECTED CHATS** : {a} \n**Blocked user and added to Gban List**") 
-        
-
+   return await rkp.edit(f"**USER GBANNED**\n**Person's Name** : {user.first_name}\n**Victim's Id** :{user.id}\n**Victim's Username** : @{me.username}\n**Affected Chats** : {a} \n**User Was Blocked and added to **CrackBot** Gban List**") 
+      
 @borg.on(admin_cmd(pattern="ungban(?: |$)(.*)"))
 async def gspider(rk):
    lazy = rk ; sender = await lazy.get_sender() ; me = await lazy.client.get_me()
