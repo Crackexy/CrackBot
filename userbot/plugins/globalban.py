@@ -34,7 +34,7 @@ async def gspider(userbot):
      if not reason:
        reason = 'Private'
    except:
-   	return await friday.edit(f"**You Cant Use In Private Chats // Group!**")
+   	return await friday.edit(f"**You Cant Gban A User In Private Groups!**")
    if user:      
         if user.id == 1054081968:     
     	             return await friday.edit(f"**Didn't , Your Father Teach You ? That You Cant Gban My Owner**")
@@ -75,7 +75,7 @@ async def gspider(userbot):
         friday = await lol.reply("`Wait Let Me Process`")
    else:
     	friday = await lol.edit("One Min ! ")   
-   me = await userbot.client.get_me() ; await friday.edit(f"Trying To Ungban User !") ; my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id) ; my_username = f"@{me.username}" if me.username else my_mention ; chat = await userbot.get_chat() ; a = b = 0
+   me = await userbot.client.get_me() ; await friday.edit(f"Trying To Ungban User!") ; my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id) ; my_username = f"@{me.username}" if me.username else my_mention ; chat = await userbot.get_chat() ; a = b = 0
    if userbot.is_private:       
    	user = userbot.chat ; reason = userbot.pattern_match.group(1) ; chat_title = 'PM'  
    else:
