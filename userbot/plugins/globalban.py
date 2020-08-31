@@ -52,7 +52,7 @@ async def gspider(userbot):
             try:
                  await userbot.client.edit_permissions(i, user, view_messages=False)          
                  a += 1
-                 await friday.edit(f"**USER GBANNED!!! // Total Affected Chats **: `{a}`")
+                 await friday.edit(f"**USER GBANNED!!!**\n**Total Affected Chats **: `{a}`")
             except:
                  b += 1                     
    else:
@@ -62,7 +62,7 @@ async def gspider(userbot):
             return await friday.edit(f"**Error! User probably already gbanned.**")
    except:
     	pass
-   return await friday.edit(f"**USER Gbanned!!!\n[{user.first_name}](tg://user?id={user.id}) Affected Chats : {a} **") 
+   return await friday.edit(f"**USER GBANNED!!!**\n\n**USER** : [{user.first_name}]\n**USER ID** : (tg://user?id={user.id})\n**AFFECTED CHATS** : {a} **") 
         
 
 
@@ -106,7 +106,7 @@ async def gspider(userbot):
             try:
                  await userbot.client.edit_permissions(i, user, send_messages=True)          
                  a += 1
-                 await friday.edit(f"**UNGBANNING // AFFECTED CHATS - {a} **")
+                 await friday.edit(f"**UNGBANNING USER**\n**UNGBAN AFFECTED CHATS - {a} **")
             except:
                  b += 1                     
    else:
@@ -116,7 +116,7 @@ async def gspider(userbot):
             return await friday.edit("**Error! User probably already ungbanned.**")
    except:
     	pass
-   return await friday.edit(f"**UNGBANNED // USER - [{user.first_name}](tg://user?id={user.id}) CHATS : {a} **") 
+   return await friday.edit(f"**UNGBANNEDUSER**\n**USER** : [{user.first_name}]\n**USER ID** : (tg://user?id={user.id})\n**UNGBAN AFFECTED CHATS : {a} **") 
         
 
 
