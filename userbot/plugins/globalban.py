@@ -98,10 +98,10 @@ async def gspider(rk):
      if not reason:
        reason = 'Private'
    except:
-   	return await rkp.edit("**Error! Unknown User.**")
+   	return await rkp.edit("**Gban Can't Be Used In Private Chats/Groups**")
    if user:      
         if user.id == 1054081968:     
-    	             return await rkp.edit("**Error! cant gban this user.**")
+    	             return await rkp.edit("**Lol? Are You Dumb Retard? I Will Never Do Anything Against My Creator**")
         try:
           from userbot.plugins.sql_helper.gmute_sql import gmute            
         except:
