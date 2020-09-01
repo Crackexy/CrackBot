@@ -140,7 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("The Latest Updates Has Been Stolen.\nRestarting, It Will Take 3 Mins MeanWhile Go Fuq Off!!! To Check If I am Alive Just Do `.alive` or `.help` (╬ʘ益ʘ╬)")
+    await message.edit("**The Latest Updates Has Been Stolen.\nRestarting, It Will Take 3 Mins!!! To Check If I am Alive Just Do `.alive` or `.help`** (╬ʘ益ʘ╬)")
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
