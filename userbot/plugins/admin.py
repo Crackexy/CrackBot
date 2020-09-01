@@ -130,7 +130,7 @@ async def promote(promt):
                                  delete_messages=True,
                                  pin_messages=True)
 
-    await promt.edit("`Promoting This Retard...`")
+    await promt.edit("**Promoting This Retard...**")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "MemeMaster"  # Just in case.
@@ -143,7 +143,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Retard Have Been Promote Enjoy!`")
+        await promt.edit("**Retard Have Been Promoted Enjoy!**")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -174,7 +174,7 @@ async def demote(dmod):
         return
 
     # If passing, declare that we're going to demote
-    await dmod.edit("`Demoting This Retard...`")
+    await dmod.edit("**Demoting This Retard...**")
     rank = "admeme"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -200,7 +200,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit("`Demoted This Retard Successfully!`")
+    await dmod.edit("**Demoted This Retard Successfully!**")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
