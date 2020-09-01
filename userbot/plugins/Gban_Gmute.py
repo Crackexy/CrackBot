@@ -12,8 +12,7 @@ from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from telethon.tl.functions.messages import GetCommonChatsRequest
 from telethon.events import ChatAction
 client = bot
-replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
-username = replied_user.user.username
+
 
 
 
@@ -130,7 +129,7 @@ async def gspider(rk):
             return await rkp.edit(f"**Error! User Probably Already Gbanned.**")
    except:
     	pass
-   return await rkp.edit(f"**USER GBANNED**\n**Person's Name** : {user.first_name}\n**Victim's Id** :{user.id}\n**Victim's Username** : "@{}".format(username)\n**Affected Chats** : {a} \n**User Was Blocked and added to CrackBot Gban List**") 
+   return await rkp.edit(f"**USER GBANNED❗❗❗**\n**Person's Name** : {user.first_name}\n**Victim's Id** :{user.id}\n**GBanned By** : @{me.username}\n**Affected Chats** : {a} \n**User Was Blocked and added to CrackBot Gban List**") 
 
 @borg.on(admin_cmd(pattern="ungban(?: |$)(.*)"))
 async def gspider(rk):
