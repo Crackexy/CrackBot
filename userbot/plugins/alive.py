@@ -11,10 +11,10 @@ pm_caption = "**ᴄʀᴀᴄᴋʙᴏᴛ ᴏғғɪᴄɪᴀʟ**\n\n"
 pm_caption += "**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
 pm_caption += "✘ About My System ✘\n\n"
 pm_caption += "➾ **Telethon Version** : 6.0.9\n➾ **Python** : 3.7.4\n"
-pm_caption += "➾ **DataBase** : Functioning.\n"
-pm_caption += "➾ **Bot Creator** : [Crackexy](https://t.me/Crackexy).\n"
-pm_caption += "➾ **Crackbot Version** : 2.00.\n\n"
-pm_caption += f"**➾ My Master** : {DEFAULTUSER}.\n"
+pm_caption += "➾ **DataBase** : Functioning\n"
+pm_caption += "➾ **Bot Creator** : [Crackexy](https://t.me/Crackexy)\n"
+pm_caption += "➾ **Crackbot Version** : 2.0\n\n"
+pm_caption += f"➾ **My Master** : {DEFAULTUSER}\n"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
