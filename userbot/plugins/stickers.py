@@ -57,7 +57,7 @@ async def _(event):
     else:
         packname = f"{DEFAULTUSER}'s CrackBot Vol.{pack}"
         packshortname = f"CrackBot_{userid}_pack"
-    await event.edit("Sed Lyf! This Sticker Is Going To Be Fuqed And Added To My Pack! I Don't Care If You Mind Go Fuq Off!!!")
+    await event.edit("Sed Lyf! This Sticker Is Going To Be Cloned And Added To My Pack! I Don't Care If You Mind GTFO!!!**")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "CrackBotStick.png"
@@ -81,7 +81,7 @@ async def _(event):
             sticker.seek(0)
             uploaded_sticker = await borg.upload_file(sticker, file_name=file_ext_ns_ion)
 
-    await event.edit("Stealing this sticker. Please Wait!")
+    await event.edit("**Cloning this sticker. Please Wait!**")
 
     async with borg.conversation("@Stickers") as bot_conv:
         now = datetime.datetime.now()
@@ -191,7 +191,7 @@ async def _(event):
                 await silently_send_message(bot_conv, response)
                 await silently_send_message(bot_conv, sticker_emoji)
                 await silently_send_message(bot_conv, "/done")
-    await event.edit(f"Sticker Has Been Fuqed And Successfully Kanged To My Pack [Here](t.me/addstickers/{packshortname})")
+    await event.edit(f"**Sticker Has Been Cloned And Successfully Packed To [Pack](t.me/addstickers/{packshortname})**")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
