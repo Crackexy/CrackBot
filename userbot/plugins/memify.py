@@ -48,7 +48,7 @@ async def _(event):
     if not reply_message.media:
        await event.edit("```reply to a image/sticker/gif```")
        return
-    chat = "@MemeAutobot"
+    chat = "@MemeCreatorBot"
     sender = reply_message.sender
     file_ext_ns_ion = "@memetime.png"
     file = await borg.download_file(reply_message.media)
@@ -59,7 +59,7 @@ async def _(event):
     else:
      await event.edit("```Transfiguration Time! Mwahahahaha CrackBot is Memifying This Image! ¯\(◉‿◉)/¯ ```")
     
-    async with borg.conversation("@MemeAutobot") as bot_conv:
+    async with borg.conversation("@MemeCreatorBot") as bot_conv:
           try:
             memeVar = event.pattern_match.group(1)
             await silently_send_message(bot_conv, "/start")
@@ -68,7 +68,7 @@ async def _(event):
             await borg.send_file(chat, reply_message.media)
             response = await bot_conv.get_response()
           except YouBlockedUserError: 
-              await event.reply("```Please unblock @MemeAutobot and try again```")
+              await event.reply("```Please unblock @MemeCreatorBot and try again```")
               return
           if response.text.startswith("Forward"):
               await event.edit("```can you kindly disable your forward privacy settings for good nibba?```")
