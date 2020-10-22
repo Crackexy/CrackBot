@@ -48,15 +48,10 @@ async def _(event):
     user = await bot.get_me()
     if not user.first_name:
         user.first_name = user.id
-    pack = 3
+    pack = 1
     userid = event.from_id
-    # Friday
-    if userid == 953414679:
-        packname = f"CrackBot Pack ☣️"
-        packshortname = "ItsCrackBot"
-    else:
-        packname = f"{DEFAULTUSER}'s CrackBot Vol.{pack}"
-        packshortname = f"Crackbot{userid}{pack}"
+    packname = f"{DEFAULTUSER}'s CrackBot Vol.{pack}"
+    packshortname = f"Crack_bot_{userid}_{pack}"
     await event.edit("Sed Lyf! This Sticker Is Going To Be Cloned And Added To My Pack! I Don't Care If You Mind GTFO!!!**")
 
     is_a_s = is_it_animated_sticker(reply_message)
@@ -191,7 +186,7 @@ async def _(event):
                 await silently_send_message(bot_conv, response)
                 await silently_send_message(bot_conv, sticker_emoji)
                 await silently_send_message(bot_conv, "/done")
-    await event.edit(f"**Sticker Has Been Cloned And Successfully Packed To [Pack](t.me/addstickers/{packshortname})**")
+    await event.edit(f"Sticker Has Been Cloned And Successfully Packed [Here](t.me/addstickers/{packshortname}.)")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
