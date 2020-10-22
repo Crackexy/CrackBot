@@ -13,7 +13,7 @@ pm_caption += "✘ About My System ✘\n\n"
 pm_caption += "➾ **Telethon Version** : 6.0.9\n➾ **Python** : 3.7.4\n"
 pm_caption += "➾ **DataBase** : Functioning\n"
 pm_caption += "➾ **Bot Creator** : [Crackexy](https://t.me/Crackexy)\n"
-pm_caption += "➾ **Crackbot Version** : 2.0\n\n"
+pm_caption += "➾ **Crackbot Version** : 3.0\n\n"
 pm_caption += f"➾ **My Master** : {DEFAULTUSER}\n"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
