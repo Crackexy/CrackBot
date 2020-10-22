@@ -40,7 +40,7 @@ async def _(event):
         await event.edit("Reply to a photo to add to my personal sticker pack.")
         return
     reply_message = await event.get_reply_message()
-    sticker_emoji = "🤔"
+    sticker_emoji = "😌"
     input_str = event.pattern_match.group(1)
     if input_str:
         sticker_emoji = input_str
@@ -53,10 +53,10 @@ async def _(event):
     # Friday
     if userid == 953414679:
         packname = f"CrackBot Pack ☣️"
-        packshortname = "CrackBot"
+        packshortname = "ItsCrackBot"
     else:
         packname = f"{DEFAULTUSER}'s CrackBot Vol.{pack}"
-        packshortname = f"CrackBot_{userid}_pack"
+        packshortname = f"CrackBot_{userid}_{pack}"
     await event.edit("Sed Lyf! This Sticker Is Going To Be Cloned And Added To My Pack! I Don't Care If You Mind GTFO!!!**")
 
     is_a_s = is_it_animated_sticker(reply_message)
